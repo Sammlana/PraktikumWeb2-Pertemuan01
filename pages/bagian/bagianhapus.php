@@ -9,7 +9,7 @@
         </a>
     </div>
 </div>
-<div id="pesan" class="row mb-3 col">
+<div id="pesan" class="row mb-3">
     <div class="col">
         <?php
         include "database/connetion.php";
