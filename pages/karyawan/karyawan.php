@@ -60,7 +60,7 @@ include "database/connetion.php"
                                 <?php echo $row["nama_bagian"] ?>
                             </td>
                             <td>
-                                <a href="?page=karyawan&nik=<?php echo $row["nik"] ?>" class="btn btn-primary">
+                                <a href="?page=karyawanubah&nik=<?php echo $row["nik"] ?>" class="btn btn-primary">
                                     <i class="fa fa-edit"></i>
                                     Ubah
                                 </a>

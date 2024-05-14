@@ -104,7 +104,7 @@
                         MAGANG
                     </label>
                 </div>
-                <div class="row mt-3">
+    <div class="row mt-3">
         <div class="col">
             <?php
             $selectSQL = "SELECT * FROM bagian";

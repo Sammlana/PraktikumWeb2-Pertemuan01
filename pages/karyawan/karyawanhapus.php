@@ -13,7 +13,7 @@
     <div class="col">
         <?php
         include "database/connetion.php";
-        $id = $_GET['nik'];
+        $nik = $_GET['nik'];
 
         $sql = "DELETE FROM karyawan WHERE nik = $nik";
 
