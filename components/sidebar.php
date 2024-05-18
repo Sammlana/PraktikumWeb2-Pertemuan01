@@ -1,4 +1,40 @@
-        <!-- Sidebar -->
+<?php
+$dashboard_active = "fw-bold";
+$bagian_active = "fw-bold";
+$karyawan_active = "fw-bold";
+$penggajian_active = "fw-bold";
+
+$page = $_GET["page"];
+
+switch ($page) {
+    case "":
+    case "dashboard":
+        $dashboard_active = "active";
+        break;
+    case "bagian":
+    case "bagiantambah":
+    case "bagianbah":
+    case "bagianhapus":
+        $bagian_active = "active";
+        break;
+    case "karyawan":
+    case "karyawantambah":
+    case "karyawanubah":
+    case "karyawanhapus":
+        $karyawan_active= "active";
+        break;
+    case "pilihanbulantahunpenggajian":
+    case "penggajian":
+    case "penggajiantambah":
+    case "pilihankaryawanpenggajian":
+    case "penggajianhapus":
+        $penggajian_active = "active";
+        break;
+    default:
+        $dashboard_active = "active";
+}
+?>
+
         <div class="bg-white" id="sidebar-wrapper">
             <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i class="fas fa-money-bill me-2"></i>Penggajian</div>
             <div class="list-group list-group-flush my-3">
