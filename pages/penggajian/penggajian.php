@@ -8,7 +8,7 @@
             Tambah
         </a>
         <div class="col">
-            <a href="?page=pilihbulantahunpenggajian" class="btn btn-primary float-end">
+            <a href="?page=pilihbulantahunpenggajian" class="btn btn-primary float-end me-2">
                 <i class="fa fa-arrow-cicle-left"></i>
                 Kembali
             </a>

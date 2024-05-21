@@ -25,11 +25,11 @@
             $updateSQL ="UPDATE karyawan SET 
                 nama = '$nama',
                 tanggal_mulai='$tanggal_mulai',
-                gaji_pokok=$gaji_pokok,
+                gaji_pokok='$gaji_pokok',
                 status_karyawan='$status_karyawan',
                 bagian_id=$bagian_id 
                 WHERE nik = '$nik'";
-            $result = mysqli_query($connection, $sql);
+            $result = mysqli_query($connection, $updateSQL);
             if (!$result) {
                 ?>
                     <div class="alert alert-danger" role="alert">
@@ -110,7 +110,7 @@
         <label for="bagian_id" class="form-label">Bagian</label>
             <?php
             $selectSQLBagian = "SELECT * FROM bagian";
-            $result_bagian = mysqli_query($connection, $selectSQL);
+            $result_bagian = mysqli_query($connection, $selectSQLBagian);
             if (!$result_bagian) {
             ?>
                 <div class="alert alert-danger" role="alert">
@@ -119,7 +119,7 @@
             <?php
                 return;
             }
-            if (mysqli_num_rows($result) == 0){
+            if (mysqli_num_rows($result_bagian) == 0){
             ?>
                 <div class="alert alert-light" role="alert">
                     Data Kosong
@@ -132,11 +132,10 @@
                 <option value="" selected> -- Pilih Bagian -- </option>
                 <?php
                 while ($row_bagian = mysqli_fetch_array($result_bagian)) {
-                $bagian_selected = $row["bagian_id"] == $row_bagian["id"] ? "selected":"";
+                    $bagian_selected = $row["bagian_id"] == $row_bagian["id"] ? "selected":"";
                 ?>
-                    <option value="<?php echo $row_bagian["id"] ?>"
-                    <?php echo $bagian_selected ?>>
-                    <?php echo $row["nama"] ?>
+                <option value="<?php echo $row_bagian["id"] ?>" <?php echo $bagian_selected ?>>
+                    <?php echo $row_bagian["nama"] ?>
                 </option>
                 <?php
                 }
