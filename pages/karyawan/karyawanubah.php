@@ -106,7 +106,7 @@
                         MAGANG
                     </label>
                 </div>
-    <div class="row mt-3">
+    <div class="mb-3 mt-3">
         <label for="bagian_id" class="form-label">Bagian</label>
             <?php
             $selectSQLBagian = "SELECT * FROM bagian";
