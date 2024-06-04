@@ -75,7 +75,7 @@
                     <label for="nama" class="form-label">Nama</label>
                     <input type="text" class="form-control" value="<?php echo $row["nama"] ?>" readonly>         
                 </div> 
-                </div>
+            </div>
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="tanggal_mulai" class="form-label">Tanggal Mulai Bekerja</label>
@@ -120,7 +120,7 @@
                         ?>
                     </div>
                 </div>
-            
+        </div>
             <div class="card px-3 mt-3">
                 <form action="" method="post">
                     <input type="hidden" name="karyawan_nik" value="<?= $row["nik"] ?>">
@@ -155,7 +155,7 @@
                 </div>
                 </form>
             </div>
-        </div>
+        
     </div>
 </div>
 
