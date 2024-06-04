@@ -141,7 +141,7 @@
                 }
                 ?>
             </select>
-                <div class="col mb-3">
+                <div class="col mb-3 mt-3">
                     <button class="btn btn-success" type="submit" name="simpan_button">
                         <i class="fas fa-save"></i>
                         Simpan
